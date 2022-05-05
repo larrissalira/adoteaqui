@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@700&family=Keania+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Caudex', serif, 'Keania One', 'cursive';
+}
+
+header {
+    display: flex;
+    font-weight: 700;
+    color: #000000;
+}
+
+a {
+    text-align: center;
+}
+
+.adote {
+    display: flex;
+    flex-direction: row;
+    background: rgb(20, 1, 107);
+    width: 35vw;
+    justify-content: flex-start;
+    padding: 17px;
+    border-radius: 0px 0px 0px 8px;
+}
+
+#texto {
+    font-size: 18px;
+    font-weight: 750;
+    color: #ffffff;
+    margin-left: 126px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background: #000000;
+    justify-content: space-around;
+    padding: 20px;
+    font-weight: 300px;
+    width: 72vw;
+    color: #EEEEEE;
+    border-radius: 0px 0px 9px 3px;
+}
+
+#home:hover, #sobre:hover, #contato:hover {
+    cursor: pointer;
+    color: rgb(20, 1, 107);
+    font-size: 130%;
+}
+
+#adote-texto:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 140%;
+}
+
+.adoteaqui a {
+    transition: all 0.8s ease 0s;
+}
+
+.container a {
+    transition: all 0.8s ease 0s;
+}
+
+@media (max-width: 700px) {
+    .adoteaqui{
+        display: none;
+    }
+    .container {
+        width: 100vw;
+        flex-direction: column;
+        line-height: 20px;
+        border-radius: 0px 0px 8px 8px;
+    }
+    #texto {
+        margin-left: 0px;
+    }
+}
